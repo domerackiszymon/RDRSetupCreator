@@ -1,7 +1,10 @@
+@import url("../fonts/Roboto-Bold.ttf");
+@import url("../fonts/Roboto-Regular.ttf");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .index {
@@ -17,7 +20,15 @@
   display: flex;
 }
 
+.titleBar__title {
+  color: #FFF;
+  font-weight: bold;
+}
+
 .titleBar__dragArea {
+  display: flex;
+  padding-left: 8px;
+  align-items: center;
   -webkit-app-region: drag;
   width: calc(100% - 84px);
   height: 100%;

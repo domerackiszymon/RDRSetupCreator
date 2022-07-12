@@ -49,7 +49,7 @@ const createWindow = () => {
       }-${date.getFullYear()}.json`,
       filters: [{ name: "JSON file", extensions: ["json"] }],
     });
-    return file;
+    return file.filePath;
   });
 };
 
